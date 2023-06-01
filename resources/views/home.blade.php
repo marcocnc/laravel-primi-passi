@@ -10,6 +10,9 @@
     <h1>Welcome</h1>
     <h2>{{ $name }} {{ $lastname }}</h2>
 
+    @include('partials.header')
+    <br>
+    <h3>Lista amici:</h3>
     <ul>
         @foreach($users as $user)
             <li>

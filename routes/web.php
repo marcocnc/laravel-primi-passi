@@ -25,4 +25,8 @@ Route::get('/', function(){
     ];
 
     return view('home', compact('name', 'lastname', 'users'));
-});
+})->name('home');
+
+Route::get('/about-us', function(){
+    return view('about');
+})->name('about');
