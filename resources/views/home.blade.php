@@ -9,5 +9,13 @@
 <body>
     <h1>Welcome</h1>
     <h2>{{ $name }} {{ $lastname }}</h2>
+
+    <ul>
+        @foreach($users as $user)
+            <li>
+                {{$user}}
+            </li>
+        @endforeach
+    </ul>
 </body>
 </html>

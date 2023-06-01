@@ -17,5 +17,12 @@ Route::get('/', function(){
     $name = 'Marco';
     $lastname = 'Cancelliere';
 
-    return view('home', compact('name', 'lastname'));
-})-> home;
+    $users = [
+        'Andrea Convertini',
+        'Raffaele Catalano',
+        'Marco Mazzilli',
+        'Cosimo Tramonte'
+    ];
+
+    return view('home', compact('name', 'lastname', 'users'));
+});
