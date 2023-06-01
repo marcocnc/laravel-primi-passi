@@ -7,6 +7,7 @@
     <title>Laravel primi passi</title>
 </head>
 <body>
-    <h1>Ciao Laravel</h1>
+    <h1>Welcome</h1>
+    <h2>{{ $name }} {{ $lastname }}</h2>
 </body>
 </html>
