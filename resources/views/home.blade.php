@@ -17,5 +17,16 @@
             </li>
         @endforeach
     </ul>
+
+    @if (in_array('Andrea Convertini', $users))
+    <p>
+        <strong> Andrea Convertini è presente</strong>
+    </p>
+    @else
+        <p>
+            <strong> Andrea Convertini non è presente nella lista</strong>
+        </p>
+    @endif
+
 </body>
 </html>
